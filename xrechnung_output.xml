@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CrossIndustryInvoice xmlns="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <ExchangedDocument>
+    <ID>Unbekannt</ID>
+    <IssueDateTime>
+      <DateTimeString format="102">20230101</DateTimeString>
+    </IssueDateTime>
+  </ExchangedDocument>
+  <SupplyChainTradeTransaction>
+    <ApplicableHeaderTradeAgreement>
+      <SellerTradeParty>
+        <Name>Beispiel GmbH</Name>
+        <ID>DE123456789</ID>
+        <PostalTradeAddress>
+          <StreetName>Musterstraße 1</StreetName>
+          <PostcodeCode>12345</PostcodeCode>
+          <CityName>Musterstadt</CityName>
+          <CountryID>DE</CountryID>
+        </PostalTradeAddress>
+      </SellerTradeParty>
+      <BuyerTradeParty>
+        <Name>Kunden AG</Name>
+        <ID>DE987654321</ID>
+        <PostalTradeAddress>
+          <StreetName>Kundenstraße 5</StreetName>
+          <PostcodeCode>54321</PostcodeCode>
+          <CityName>Kundenstadt</CityName>
+          <CountryID>DE</CountryID>
+        </PostalTradeAddress>
+      </BuyerTradeParty>
+    </ApplicableHeaderTradeAgreement>
+    <ApplicableHeaderTradeSettlement>
+      <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+      <GrandTotalAmount>1000.00</GrandTotalAmount>
+      <TaxTotalAmount>190.00</TaxTotalAmount>
+    </ApplicableHeaderTradeSettlement>
+    <IncludedSupplyChainTradeLineItem>
+      <AssociatedDocumentLineDocument>
+        <LineID>1</LineID>
+      </AssociatedDocumentLineDocument>
+      <SpecifiedTradeProduct>2</SpecifiedTradeProduct>
+      <SpecifiedLineTradeAgreement>
+        <NetPriceProductTradePrice>500.00</NetPriceProductTradePrice>
+      </SpecifiedLineTradeAgreement>
+      <Name>Produkt A</Name>
+    </IncludedSupplyChainTradeLineItem>
+    <IncludedSupplyChainTradeLineItem>
+      <AssociatedDocumentLineDocument>
+        <LineID>1</LineID>
+      </AssociatedDocumentLineDocument>
+      <SpecifiedTradeProduct>1</SpecifiedTradeProduct>
+      <SpecifiedLineTradeAgreement>
+        <NetPriceProductTradePrice>500.00</NetPriceProductTradePrice>
+      </SpecifiedLineTradeAgreement>
+      <Name>Produkt B</Name>
+    </IncludedSupplyChainTradeLineItem>
+  </SupplyChainTradeTransaction>
+</CrossIndustryInvoice>
