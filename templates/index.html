@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>XRechnung Konverter</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>PDF zu XRechnung Konverter</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="fileInput">PDF-Rechnung hochladen:</label>
+        <input type="file" id="fileInput" name="file" required>
+        <button type="submit">Konvertieren</button>
+    </form>
+    <div id="result"></div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
